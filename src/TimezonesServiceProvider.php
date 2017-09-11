@@ -17,6 +17,10 @@ class TimezonesServiceProvider extends ServiceProvider
         $this->publishes([
         __DIR__.'/views' => base_path('resources/views/ngiasim/timezones'),
         ]);
+        
+        $this->publishes([
+        __DIR__ . '/migrations' => $this->app->databasePath() . '/migrations'
+        ], 'migrations');
     }
 
     /**
