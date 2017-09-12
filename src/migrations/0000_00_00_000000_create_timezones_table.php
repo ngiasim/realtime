@@ -1,7 +1,7 @@
 <?php
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-class CreateWebsanovaDemoItemsTable extends Migration
+class CreateTimezonesTable extends Migration
 {
 	public function up()
 	{
