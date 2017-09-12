@@ -6,22 +6,18 @@ class CreateTimezonesTable extends Migration
 	public function up()
 	{
 		//schema migrations here
-		Schema::create('websanova_demo_items', function(Blueprint $t)
+		Schema::create('timezones', function(Blueprint $t)
 		{
 			$t->increments('id')->unsigned();
-			$t->text('slug', 255);
-			$t->text('name', 255);
+			$t->string('name', 255);
+			$t->string('code', 255);
 			$t->text('description', 255);
 			$t->timestamps();
 		});
 
-		//now the data migration
-	    Artisan::call('db:seed', [
-	        '--class' => DemoSeeder::class,
-	    ]);
 	}
 	public function down()
 	{
-		Schema::drop('websanova_demo_items');
+		Schema::drop('timezones');
 	}
 }
