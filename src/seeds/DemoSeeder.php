@@ -1,5 +1,4 @@
 <?php
-namespace Websanova\Demo\Seeds;
 use Illuminate\Database\Seeder;
 class DemoSeeder extends Seeder
 {
