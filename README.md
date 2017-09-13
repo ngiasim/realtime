@@ -1,2 +1,2 @@
 # realtime
-Current timezone 
+Current timezone package for Laravel 5.*
