@@ -1,6 +1,7 @@
 {
     "name": "ngiasim/timezones",
     "description": "Package to show time",
+    "license": "MIT",
     "authors": [
         {
             "name": "Asim Zubair",
