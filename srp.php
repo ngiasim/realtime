@@ -2,8 +2,6 @@
 /**
  * An example of a Class that violates the Single Responsibility Principle.
  * Creation of customer and order mixed up.
- * 
- * @author deepak.karanth
  */
 
 
