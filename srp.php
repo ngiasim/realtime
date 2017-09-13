@@ -5,22 +5,40 @@
  * 
  * @author deepak.karanth
  */
-public class CustomerOrder {
+
+
+// Bad Example
+class CustomerOrder {
      
-    public void createCustomer(int customerId, String name) {
+    public function createCustomer(Request $request) {
         // Create customer
     }
      
-    public void submitOrder(Cart shopCart) {
-   
-        // Step 1: Submit Orders for processing
-        Order order = orderProcessor.submitOrder(shopCart.getItems());
-         
-        // Step 2: Update customer object with the newly processed order information
-        Customer customer = shopCart.getCustomer();
-        customer.addOrder(order);
-        dbManager.update(customer);
+    public function submitOrder(Request $request) {
+        // Submit Orders for processing
     }
 }
+
+
+
+
+
+
+// Good Example
+class Customer {
+     
+    public function createCustomer(Request $request) {
+        // Create customer
+    }
+ 
+}
+
+class Order {
+     
+    public function submitOrder(Request $request) {
+        // Step 1: Submit Orders for processing
+    }
+}
+
 
 ?>
